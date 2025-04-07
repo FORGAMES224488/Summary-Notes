@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter Notes: Transfer Pricing</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 25px;
+            background-color: #f8f9fa;
+            color: #343a40;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.08);
+        }
+        h1, h2, h3 {
+            color: #212529;
+            margin-top: 1.5em;
+            margin-bottom: 0.8em;
+            border-bottom: 1px solid #dee2e6;
+            padding-bottom: 0.3em;
+        }
+        h1 { font-size: 1.8em; }
+        h2 { font-size: 1.5em; }
+        h3 { font-size: 1.2em; border-bottom: none; font-weight: bold; margin-top: 1.2em; }
+        ul {
+            padding-left: 20px;
+            margin-bottom: 1em;
+        }
+        li {
+            margin-bottom: 0.5em;
+        }
+        p {
+            margin-bottom: 1em;
+        }
+        strong, b {
+            font-weight: 600;
+            color: #0056b3; /* Subtle emphasis color */
+        }
+        code {
+            background-color: #e9ecef;
+            padding: 0.2em 0.4em;
+            border-radius: 3px;
+            font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+            font-size: 0.9em;
+        }
+        .threshold {
+             font-weight: bold;
+             color: #dc3545; /* Highlight thresholds */
+        }
+        .section-ref {
+             font-style: italic;
+             color: #6c757d;
+        }
+        .important-concept {
+             border-left: 3px solid #007bff;
+             padding-left: 10px;
+             background-color: #e7f3ff;
+             margin-bottom: 1em;
+        }
+         .recap-box {
+            border: 1px solid #ffc107;
+            background-color: #fff9e6;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 1.5em;
+         }
+         .recap-box h3 {
+             margin-top: 0;
+             border-bottom: none;
+             color: #b38600;
+         }
+
+        @media (max-width: 600px) {
+            body { padding: 15px; }
+            .container { padding: 20px; }
+            h1 { font-size: 1.6em; }
+            h2 { font-size: 1.3em; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Chapter Notes: Transfer Pricing</h1>
+
+    <h2>1. Introduction & Charging Section</h2>
+    <p>Transfer Pricing (TP) provisions aim to ensure that transactions between <strong>Associated Enterprises (AEs)</strong> are conducted at an <strong>Arm's Length Price (ALP)</strong>, as if they were between unrelated parties.</p>
+    <p><strong>Charging Section:</strong> <code class="section-ref">Sec 92</code> mandates that income from an <strong>International Transaction</strong> between AEs must be computed having regard to the ALP.</p>
+    <p><strong>Importance:</strong> Approx. <strong>8-10 marks</strong> in CA Final / CMA; <strong>30 marks</strong> in Elective Paper 6C.</p>
+
+    <h2>2. Key Definitions</h2>
+
+    <h3>2.1. International Transaction <code class="section-ref">(Sec 92B)</code></h3>
+    <ul>
+        <li>A transaction between <strong>two or more AEs</strong>.</li>
+        <li>At least <strong>one</strong> of the AEs must be a <strong>Non-Resident</strong>.</li>
+        <li>Includes transactions like sale/purchase of goods/services, lending/borrowing, cost allocation, intangibles, etc.</li>
+        <li><strong>Deemed International Transaction:</strong> Transaction with an unrelated third party can be deemed an IT if:
+            <ul>
+                <li>There's a <strong>prior agreement</strong> between the AE and the third party regarding the transaction, OR</li>
+                <li>The <strong>terms</strong> are substantially determined by the AE.</li>
+            </ul>
+        </li>
+         <li>Transactions between two non-residents can be IT if one NR's income is taxable in India.</li>
+    </ul>
+
+    <h3>2.2. Associated Enterprise (AE) <code class="section-ref">(Sec 92A)</code></h3>
+    <p>Two enterprises are AEs if, at any time during the previous year, one enterprise meets certain conditions with respect to the other. Key conditions include:</p>
+    <ul>
+        <li><strong>Direct/Indirect Participation:</strong> Management, control, or capital.</li>
+        <li><strong>Shareholding:</strong> Holding <strong class="threshold">≥ 26%</strong> voting power directly or indirectly.</li>
+        <li><strong>Common Control (Shares):</strong> One entity holds <strong class="threshold">≥ 26%</strong> voting power in both enterprises.</li>
+        <li><strong>Loan:</strong> Loan advanced constitutes <strong class="threshold">≥ 51%</strong> of the borrower's total assets (book value).</li>
+        <li><strong>Guarantee:</strong> Guarantee provided for <strong class="threshold">≥ 10%</strong> of the borrower's total borrowings.</li>
+        <li><strong>Board Control:</strong> Appoints > <strong>half the BoD</strong> or <strong>1 Executive Director</strong>.</li>
+        <li><strong>Common Board Control:</strong> One entity appoints > half BoD or 1 Exec Dir in both enterprises.</li>
+        <li><strong>Dependence on Intangibles:</strong> Business wholly dependent on know-how, patents, etc., owned by the other.</li>
+        <li><strong>Raw Material Supply:</strong> <strong class="threshold">≥ 90%</strong> raw material supplied by one entity, influencing price.</li>
+        <li><strong>Buyer Influence:</strong> Buyer dictates or influences prices significantly.</li>
+        <li><strong>Individual/HUF Control:</strong> Controlled by the same individual/relative or HUF/member/relative.</li>
+        <li><strong>Firms/AOP/BOI:</strong> Interest of <strong class="threshold">≥ 10%</strong> in profits/capital/beneficial interest.</li>
+    </ul>
+
+    <h2>3. Computation of Arm's Length Price (ALP) <code class="section-ref">(Sec 92C)</code></h2>
+    <p>ALP must be determined using the <strong>Most Appropriate Method (MAM)</strong>.</p>
+    <h3>3.1. Prescribed Methods:</h3>
+    <ol>
+        <li><strong>Comparable Uncontrolled Price (CUP):</strong> Compares price in AE transaction with price in a comparable uncontrolled transaction. Requires adjustments for functional differences (e.g., CIF/FOB, support, volume discounts, credit terms). Starts with Uncontrolled Price.</li>
+        <li><strong>Resale Price Method (RPM):</strong> Used typically for distributors. Starts with Resale Price to unrelated party, reduces normal GP margin & purchase expenses to arrive at ALP (purchase price from AE).</li>
+        <li><strong>Cost Plus Method (CPM):</strong> Used typically for manufacturers/service providers. Starts with Cost (direct & indirect), adds normal GP mark-up to arrive at ALP (selling price to AE). Adjust GP for differences (e.g., AE provides support/know-how).</li>
+        <li><strong>Profit Split Method (PSM):</strong> Used for highly integrated transactions/joint ventures. Splits combined profit based on relative contributions (FAR analysis: Functions, Assets, Risks).</li>
+        <li><strong>Transactional Net Margin Method (TNMM):</strong> Compares net profit margin (relative to cost/sales/assets) from AE transaction with margin from comparable uncontrolled transactions or comparable independent companies. Often used when CUP/RPM/CPM are difficult.</li>
+    </ol>
+    <p><strong>Note:</strong> TP provisions do not apply if applying ALP reduces taxable income or increases loss in India.</p>
+
+    <h3>3.2. Multiple ALPs & Range Concept</h3>
+    <ul>
+        <li><strong>Less than 6 ALPs:</strong> Calculate the <strong>average</strong> ALP. If the difference between Actual Transaction Price (ATP) and Average ALP is within <strong class="threshold">±3%</strong> of ATP (or <strong class="threshold">±1%</strong> for wholesale trading), ATP is deemed ALP. Otherwise, Average ALP is the ALP.</li>
+        <li><strong>6 or more ALPs (Range Concept):</strong> (Not applicable for PSM)
+            <ol>
+                <li>Arrange ALPs in <strong>ascending order</strong>.</li>
+                <li>Determine the <strong>35th and 65th percentile</strong> values to form the range.
+                    <ul><li>If percentile calculation results in non-whole number (e.g., 2.45), use the next whole number position (e.g., 3rd).</li>
+                        <li>If it results in a whole number (e.g., 7), use the average of the values at that position and the next position (e.g., average of 7th and 8th).</li>
+                    </ul>
+                </li>
+                <li>If ATP falls <strong>within the range</strong>, ATP is the ALP.</li>
+                <li>If ATP falls <strong>outside the range</strong>, the <strong>median (50th percentile)</strong> of the dataset is the ALP (calculated using same whole/non-whole number logic).</li>
+            </ol>
+        </li>
+         <li><strong>Multi-Year Data:</strong> For RPM, CPM, TNMM, if multiple year data (current + preceding 2 years) is available, use a <strong>weighted average</strong> of the comparable data (margins/percentages), weighted by relevant base (sales for RPM, cost for CPM, cost/sales/assets for TNMM). Calculate average margins first, then apply range concept if needed.</li>
+    </ul>
+
+    <h3>3.3. Assessing Officer (AO) determining ALP <code class="section-ref">(Sec 92C(3))</code></h3>
+    <p>AO can determine ALP if assessee fails to:</p>
+    <ul>
+        <li>Apply MAM.</li>
+        <li>Use reliable data.</li>
+        <li>Maintain/furnish prescribed documentation (92D).</li>
+    </ul>
+    <p>If AO enhances income via ALP adjustment: No Chapter VIA / Sec 10AA deduction on enhanced income. AE's income remains unaffected.</p>
+
+    <h2>4. Procedural Aspects</h2>
+
+    <h3>4.1. Reference to Transfer Pricing Officer (TPO) <code class="section-ref">(Sec 92CA)</code></h3>
+    <ul>
+        <li>AO may refer ALP computation to TPO (with CIT/PCIT approval).</li>
+        <li>TPO has powers to gather information, conduct inquiry.</li>
+        <li>TPO's order is <strong>binding</strong> on the AO.</li>
+        <li>TPO must pass order at least <strong class="threshold">60 days</strong> before AO's time limit for assessment completion.</li>
+        <li>Process becoming faceless.</li>
+    </ul>
+
+    <h3>4.2. Safe Harbour Rules (SHR) <code class="section-ref">(Sec 92CB)</code></h3>
+    <ul>
+        <li>CBDT can notify rules where declared price/margin is accepted (reduces disputes).</li>
+        <li>Currently rules are not notified for exams.</li>
+    </ul>
+
+    <h3>4.3. Advance Pricing Agreement (APA) <code class="section-ref">(Sec 92CC & 92CD)</code></h3>
+    <div class="important-concept">
+        <p>Agreement between CBDT and assessee determining ALP methodology/specific ALP for future international transactions (<strong>not SDT</strong>).</p>
+        <ul>
+            <li><strong>Duration:</strong> Max <strong>5 consecutive years</strong>.</li>
+            <li><strong>Binding:</strong> On assessee and tax authorities (up to CIT/PCIT level), unless change in law/facts or fraud/misrepresentation (can be declared void ab initio).</li>
+            <li><strong>Rollback:</strong> Option to apply APA to max <strong>4 preceding years</strong> (Total 9 years).
+                <ul>
+                    <li><strong>Conditions:</strong> Same transaction, timely return & 92E report filed in rollback years, must apply for all eligible rollback years (no picking), additional fee (<strong class="threshold">₹5 Lakh</strong>).</li>
+                    <li><strong>Restrictions:</strong> Not allowed if ITAT decided the issue for that year, or if applying rollback reduces income below <strong>returned income</strong> (can reduce below assessed income).</li>
+                </ul>
+            </li>
+            <li><strong>Effect:</strong> Requires filing <strong>Modified Returns</strong> within <strong>3 months</strong> from end of month APA is entered into. AO recomputes assessment (within 1 year from end of FY of modified return filing) or gets extended time (24m) for pending assessments.</li>
+             <li><strong>Fees:</strong> Tiered based on transaction value (₹10L up to 100Cr, ₹15L 100-200Cr, ₹20L >200Cr).</li>
+             <li><strong>Amalgamation/Demerger:</strong> Surviving/demerged original entity can get rollback; newly formed entity cannot.</li>
+        </ul>
+    </div>
+
+    <h2>5. Secondary Adjustment <code class="section-ref">(Sec 92CE)</code></h2>
+    <div class="important-concept">
+        <p>Arises after a <strong>Primary Adjustment</strong> (increase in taxable income due to ALP application).</p>
+        <ul>
+            <li><strong>Condition:</strong> Primary adjustment <strong class="threshold">> ₹1 Crore</strong> AND relates to <strong>AY 2017-18 onwards</strong>.</li>
+            <li><strong>Trigger:</strong> Primary adjustment arises from: Suo motu adjustment by assessee, AO order accepted by assessee, APA, SHR, or MAP resolution.</li>
+            <li><strong>Rule:</strong> The 'excess money' (amount of primary adjustment) must be repatriated to India within <strong class="threshold">90 days</strong> (time limit calculation varies based on trigger - e.g., from AO order date, from date of filing return if APA entered before due date, etc.).</li>
+            <li><strong>Consequence of Non-Repatriation:</strong> Excess money treated as a <strong>deemed advance/loan</strong> to the AE. <strong>Interest</strong> is imputed annually on this amount and added to assessee's income until repatriation.</li>
+            <li><strong>Interest Rate:</strong>
+                <ul>
+                    <li>INR Denominated: SBI 1-Year MCLR (as on 1st April of PY) + <strong class="threshold">3.25%</strong>.</li>
+                    <li>Foreign Currency: 6-Month LIBOR (as on 30th Sept of PY) + <strong class="threshold">3.00%</strong>.</li>
+                </ul>
+            </li>
+            <li><strong>One-Time Tax Option:</strong> Assessee can opt to pay additional tax @ <strong class="threshold">18%</strong> + 12% Surcharge + 4% Cess (Effective ≈ 20.966%) on the non-repatriated amount. Payment stops further secondary adjustment interest imputation.</li>
+        </ul>
+    </div>
+
+    <h2>6. Documentation & Reporting</h2>
+
+    <h3>6.1. Maintenance of Documents <code class="section-ref">(Sec 92D)</code></h3>
+    <ul>
+        <li>Maintain prescribed information & documents (TP Study Report).</li>
+        <li>Mandatory if aggregate value of international transactions <strong class="threshold">> ₹1 Crore</strong>.</li>
+        <li>Retain records for <strong class="threshold">8 years</strong> from end of relevant AY.</li>
+        <li>Furnish to AO/CIT(A) within <strong class="threshold">30 days</strong> of notice (extendable by 30 days).</li>
+    </ul>
+
+    <h3>6.2. Report from CA <code class="section-ref">(Sec 92E)</code></h3>
+    <ul>
+        <li>Accountant's report in <strong>Form No. 3CEB</strong> for international transactions & SDTs.</li>
+        <li>Due Date: <strong class="threshold">31st October</strong> of the Assessment Year.</li>
+    </ul>
+
+     <h3>6.3. Master File & CbCR <code class="section-ref">(Sec 286)</code></h3>
+    <ul>
+        <li>Part of BEPS Action 13 for transparency of MNE groups.</li>
+        <li><strong>Master File (Form 3CEAA):</strong>
+            <ul>
+                <li>Overview of the MNE group's global business operations and TP policies.</li>
+                <li>Filed by <strong>each constituent entity</strong> resident in India.</li>
+                <li><strong>Thresholds:</strong> Consolidated Group Revenue (PY) <strong class="threshold">> ₹500 Crore</strong> AND (Aggregate Intl Txn <strong class="threshold">> ₹50 Crore</strong> OR Intl Txn in Intangibles <strong class="threshold">> ₹10 Crore</strong>).</li>
+                <li><strong>Part A:</strong> Mandatory filing by due date.</li>
+                <li><strong>Part B:</strong> Only if thresholds are met.</li>
+                <li><strong>Due Date:</strong> Due date of filing Return of Income (<strong class="threshold">30th November</strong>).</li>
+                 <li>Maintain records for <strong>8 years</strong>.</li>
+            </ul>
+        </li>
+        <li><strong>Country-by-Country Report (CbCR) (Form 3CEAD):</strong>
+            <ul>
+                <li>Detailed country-wise information on revenue, profit, tax paid, employees, assets, etc.</li>
+                <li>Filed by:
+                    <ul>
+                        <li><strong>Parent Entity resident in India</strong>, OR</li>
+                        <li><strong>Alternate Reporting Entity</strong> designated by the group in India, OR</li>
+                        <li>Indian <strong>Constituent Entity</strong> if Parent isn't required to file in its country, or no exchange agreement exists, or systemic failure occurs.</li>
+                    </ul>
+                </li>
+                 <li><strong>Threshold:</strong> Consolidated Group Revenue (PY prior to reporting accounting year) <strong class="threshold">≥ ₹6400 Crore</strong> (or €750 Million equivalent).</li>
+                <li><strong>Due Date:</strong> Within <strong class="threshold">12 months</strong> from the end of the reporting accounting year.</li>
+            </ul>
+        </li>
+        <li><strong>Intimation (Form 3CEAC):</strong> Indian constituent entity must inform authorities about its parent/reporting entity at least 2 months before CbCR due date.</li>
+    </ul>
+
+
+    <h2>7. Specific Anti-Avoidance Rules</h2>
+
+    <h3>7.1. Notified Jurisdictional Area (NJA) <code class="section-ref">(Sec 94A)</code></h3>
+    <ul>
+        <li>Transactions with persons in NJA are deemed transactions between AEs, and TP applies.</li>
+        <li>No tolerance band (±3%/1%) benefit.</li>
+        <li>Payments to persons in NJA attract TDS @ <strong class="threshold">30%</strong> or higher applicable rate.</li>
+        <li>Receipts from NJA require assessee to explain the source in the hands of the payer, else deemed income.</li>
+        <li><strong>Note:</strong> Currently, <strong>no country</strong> is notified as an NJA.</li>
+    </ul>
+
+    <h3>7.2. Specified Domestic Transactions (SDT) <code class="section-ref">(Sec 92BA)</code></h3>
+    <ul>
+        <li>TP provisions apply to certain domestic transactions if aggregate value <strong class="threshold">> ₹20 Crore</strong>.</li>
+        <li>Typically covers transactions between related domestic entities where one enjoys a tax holiday/benefit (e.g., Sec 80-IA, 10AA, 115BAB) to prevent profit shifting.</li>
+    </ul>
+
+    <h3>7.3. Thin Capitalisation Rules <code class="section-ref">(Sec 94B)</code></h3>
+    <div class="important-concept">
+        <p>Limits interest deduction claimed by an Indian company (or PE of foreign co.) on debt issued by a non-resident AE.</p>
+        <ul>
+            <li><strong>Limit:</strong> Interest expense deduction restricted to <strong class="threshold">30% of EBITDA</strong> (Earnings Before Interest, Taxes, Depreciation, and Amortization).</li>
+            <li><strong>Disallowed Interest:</strong> The excess interest (above 30% EBITDA) is disallowed.</li>
+            <li><strong>Carry Forward:</strong> Disallowed interest can be carried forward for <strong class="threshold">8 Assessment Years</strong> and claimed in future years subject to the 30% limit.</li>
+            <li><strong>Deemed AE Debt:</strong> Applies even if loan is from unrelated lender, if an AE provides an implicit/explicit guarantee or deposits matching funds.</li>
+            <li><strong>Exemptions:</strong>
+                <ul>
+                    <li>Companies in <strong>Banking or Insurance</strong> business.</li>
+                    <li>Total interest paid/payable to AEs during the year <strong class="threshold">≤ ₹1 Crore</strong>.</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+     <h3>7.4. Avoidance via Asset Transfer to NR <code class="section-ref">(Sec 93)</code></h3>
+     <ul>
+        <li> If a resident transfers assets to a non-resident, but retains power to enjoy the income, that income can be deemed income of the resident transferor. (Anti-avoidance measure).</li>
+     </ul>
+
+
+    <h2>8. Penalties</h2>
+    <ul>
+        <li><code class="section-ref">Sec 271AA</code>: <strong>2% of transaction value</strong> for failure to: maintain/keep docs (92D), report transactions, or furnish correct info. Also <strong class="threshold">₹5 Lakh</strong> for failure to furnish Master File.</li>
+        <li><code class="section-ref">Sec 271G</code>: <strong>2% of transaction value</strong> for failure to furnish documents/info required by TPO/AO (under 92D).</li>
+        <li><code class="section-ref">Sec 271BA</code>: <strong class="threshold">₹1 Lakh</strong> for failure to furnish CA report (Form 3CEB) under Sec 92E.</li>
+        <li><code class="section-ref">Sec 270A</code>: Failure to report international transaction treated as <strong>misreporting</strong>; penalty @ <strong class="threshold">200%</strong> of tax payable on under-reported income.</li>
+         <li><code class="section-ref">Sec 271GB</code>: Penalties for failure/delay/inaccuracy related to CbCR filing (daily penalties escalating up to <strong>₹5k/15k/50k</strong> per day; <strong>₹5L</strong> for inaccurate info furnished).</li>
+    </ul>
+    <p><strong>Note:</strong> Penalties may be waived if reasonable cause is shown (<code class="section-ref">Sec 273B</code>).</p>
+
+    <div class="recap-box">
+        <h3>Key Exam Focus Areas</h3>
+        <ul>
+             <li>Definition of Associated Enterprise <code class="section-ref">(Sec 92A)</code> - Conditions are crucial.</li>
+             <li>Methods for ALP Computation <code class="section-ref">(Sec 92C)</code> - Especially CUP & CPM with adjustments.</li>
+             <li>Range Concept (Application and Calculation).</li>
+             <li>Secondary Adjustment <code class="section-ref">(Sec 92CE)</code> - Conditions, Repatriation, Interest, One-time tax.</li>
+             <li>Thin Capitalisation <code class="section-ref">(Sec 94B)</code> - Limit, Carry forward, Exceptions.</li>
+             <li>Documentation, CbCR & Master File Requirements & Thresholds.</li>
+             <li>Penalties related to TP non-compliance.</li>
+        </ul>
+    </div>
+
+</div>
+
+</body>
+</html>

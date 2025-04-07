@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter Summary: MAT, AMT & SEZ</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 30px;
+            background-color: #ffffff;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+        h1 {
+            text-align: center;
+            color: #0056b3; /* Professional Blue */
+            margin-bottom: 25px;
+            border-bottom: 2px solid #dee2e6;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #0056b3;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            border-bottom: 1px solid #e9ecef;
+            padding-bottom: 5px;
+        }
+        h3 {
+            color: #17a2b8; /* Secondary Accent Color (Teal) */
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        p {
+            margin-bottom: 12px;
+        }
+        ul {
+            margin-bottom: 15px;
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        strong {
+            color: #28a745; /* Green for emphasis */
+        }
+        code {
+            background-color: #e9ecef;
+            padding: 0.1em 0.4em;
+            border-radius: 3px;
+            font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+            color: #495057;
+        }
+        .key-point {
+            background-color: #e7f3ff; /* Light blue background for key points */
+            padding: 2px 5px;
+            border-left: 3px solid #0056b3;
+            margin: 5px 0;
+            display: inline-block; /* Fit content width */
+        }
+         .amendment-highlight {
+             background-color: #fdecea; /* Light red for amendments */
+             border-left: 3px solid #dc3545;
+             padding: 2px 5px;
+             margin: 5px 0;
+             display: inline-block;
+         }
+         .rate {
+             font-weight: bold;
+             color: #dc3545; /* Red for rates */
+         }
+
+        @media (max-width: 600px) {
+            .container {
+                margin: 15px;
+                padding: 20px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.4em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Chapter Summary: MAT, AMT & SEZ</h1>
+
+    <h2>1. Minimum Alternate Tax (MAT) - Section 115JB</h2>
+    <p><span class="key-point">Applicability:</span> Applies only to <strong>Companies</strong> (Domestic & Foreign).</p>
+    <p><span class="key-point">Core Concept:</span> Company pays higher of:</p>
+    <ul>
+        <li>Normal Income Tax liability</li>
+        <li><span class="rate">15%</span> of <strong>Book Profit</strong> (+ Surcharge & Cess)</li>
+    </ul>
+    <p><span class="key-point">IFSC Rate:</span> Rate reduced to <span class="rate">9%</span> for companies that are units in an IFSC deriving income in convertible foreign exchange.</p>
+
+    <h3>Book Profit Calculation</h3>
+    <p>Start with Net Profit as per <strong>Companies Act P&L (Schedule III)</strong>. Make specified adjustments:</p>
+    <ul>
+        <li><strong>Add Back (If Debited to P&L):</strong>
+            <ul>
+                <li>Income Tax (incl. interest, surcharge, cess), DDT</li>
+                <li>Transfers to any Reserves</li>
+                <li>Provisions for unascertained liabilities / diminution in asset value (Except provisions on scientific/actuarial basis, e.g., Gratuity)</li>
+                <li>Deferred Tax debit</li>
+                <li>Depreciation (Total, including on revaluation)</li>
+                <li>Expenditure related to certain exempt incomes (Sec 10, 11, 12) / specific foreign co. income / Sec 115BBF royalty, if income reduced below.</li>
+            </ul>
+        </li>
+        <li><strong>Deduct (If Credited to P&L or otherwise):</strong>
+            <ul>
+                <li>Withdrawals from Reserves/Provisions (if reserve originally increased Book Profit via P&L)</li>
+                <li>Income exempt u/s 10 (e.g., Agri income), 11, 12.</li>
+                <li>Deferred Tax credit</li>
+                <li>Depreciation <strong>other than</strong> on revaluation</li>
+                <li>Withdrawal from Revaluation Reserve (up to revaluation depreciation)</li>
+                <li>Brought forward loss OR Unabsorbed depreciation as per <strong>books</strong> (<strong>Lower</strong> of the two, unless IBC/Sec 241 case applies - then deduct both).</li>
+                <li>Specific incomes of Foreign Companies (if taxed < 15% normally)</li>
+                <li>Royalty income taxable u/s 115BBF (@10%)</li>
+            </ul>
+        </li>
+    </ul>
+     <h3>Ind AS Adjustments (For companies following Ind AS)</h3>
+     <ul>
+         <li>Adjustments for items routed through <strong>Other Comprehensive Income (OCI)</strong> that won't be reclassified to P&L (except Revaluation Surplus & FVTOCI Equity gains, which are adjusted on disposal).</li>
+         <li>Adjustments for P&L impact of <strong>De-merger</strong> accounting (distribution of non-cash assets).</li>
+         <li>Adjustment for <strong>Transition Amount</strong> on first-time Ind AS adoption (spread over 5 years), excluding specific items.</li>
+     </ul>
+
+      <h3><span class="amendment-highlight">MAT Relief (APA / Secondary Adjustment)</span></h3>
+      <p>Optional relief available by reducing current year's MAT liability if past years' income included in current Book Profit due to APA/Secondary Adjustments.</p>
+
+    <h3>MAT Credit (Section 115JAA)</h3>
+    <ul>
+        <li>Generated when MAT paid > Normal Tax.</li>
+        <li>Credit = MAT paid - Normal Tax payable.</li>
+        <li>Can be carried forward for <strong>15 Assessment Years</strong>.</li>
+        <li>Set-off allowed in a year when Normal Tax > MAT, up to the difference between them.</li>
+        <li>Credit reduced if FTC against MAT > FTC against Normal Tax.</li>
+    </ul>
+
+    <h3>Non-Applicability of MAT</h3>
+    <ul>
+        <li>Foreign Co. resident of DTAA country with <strong>no PE</strong> in India.</li>
+        <li>Foreign Co. resident of non-DTAA country not requiring registration under Company Law.</li>
+        <li>Companies paying tax u/s <strong>115BAA</strong> or <strong>115BAB</strong>.</li>
+        <li>Life Insurance Business income.</li>
+        <li>Companies with income taxed presumptively (44B, BB, BBA, BBB).</li>
+    </ul>
+
+    <h2>2. Alternate Minimum Tax (AMT) - Section 115JC</h2>
+    <p><span class="key-point">Applicability:</span> Applies to <strong>All Assessees EXCEPT Companies</strong> (e.g., Individuals, Firms, LLPs, AOP/BOI, etc.).</p>
+    <p><span class="key-point">Core Concept:</span> Assessee pays higher of:</p>
+    <ul>
+        <li>Normal Income Tax liability</li>
+        <li><span class="rate">18.5%</span> of <strong>Adjusted Total Income (ATI)</strong> (+ Surcharge & Cess)</li>
+    </ul>
+     <p><span class="key-point">IFSC Rate:</span> Rate reduced to <span class="rate">9%</span> for units in an IFSC deriving income in convertible foreign exchange.</p>
+
+    <h3>Adjusted Total Income (ATI) Calculation</h3>
+    <p>ATI = Total Income (as per normal provisions) + Following deductions claimed:</p>
+    <ul>
+        <li><code>Section 10AA</code> (SEZ)</li>
+        <li><code>Section 35AD</code> (Specified Businesses)</li>
+        <li><code>Chapter VI-A deductions under heading "C.—Deductions in respect of certain incomes"</code> (i.e., <strong>80-IA to 80RRB</strong>, excluding 80P, but <strong>including 80JJAA</strong>)</li>
+    </ul>
+    <p><strong>Less:</strong> Depreciation u/s 32 (if 35AD deduction was added back).</p>
+
+    <h3>AMT Credit (Section 115JEE)</h3>
+    <ul>
+        <li>Generated when AMT paid > Normal Tax.</li>
+        <li>Credit = AMT paid - Normal Tax payable.</li>
+        <li>Can be carried forward for <strong>15 Assessment Years</strong>.</li>
+        <li>Set-off allowed in a year when Normal Tax > AMT, up to the difference between them.</li>
+        <li>Credit reduced if FTC against AMT > FTC against Normal Tax.</li>
+    </ul>
+
+    <h3>Non-Applicability of AMT</h3>
+    <ul>
+        <li>Individual, HUF, AOP, BOI, AJP if <strong>ATI ≤ ₹20 Lakhs</strong>.</li>
+        <li>Assessee opting for tax u/s <strong>115BAC</strong> (Individual/HUF) or <strong>115BAD</strong> (Co-operative Society).</li>
+    </ul>
+
+     <h2>3. SEZ Deduction (Section 10AA)</h2>
+      <p><span class="key-point">Applicability:</span> Deduction from GTI for units in SEZ manufacturing goods or providing services.</p>
+     <p><span class="key-point">Sunset Clause:</span> Unit must have commenced operations by <strong>31st March 2021</strong> (Approval by 31st March 2020).</p>
+
+    <h3>Deduction Quantum & Period (Total 15 Years)</h3>
+    <ul>
+        <li><strong>First 5 Years:</strong> 100% of Export Profit</li>
+        <li><strong>Next 5 Years (Yr 6-10):</strong> 50% of Export Profit</li>
+        <li><strong>Next 5 Years (Yr 11-15):</strong> Lower of (50% of Export Profit OR Amount transferred to SEZ Re-investment Reserve)</li>
+    </ul>
+
+    <h3>Export Profit Calculation</h3>
+    <p>Export Profit = <code>(Profit of SEZ Unit) * (Export Turnover / Total Turnover)</code></p>
+    <ul>
+        <li><strong>Profit of SEZ Unit:</strong> PGBP income of the unit (Excludes CCS, Duty Drawback, Import License Sale Profit for this formula).</li>
+        <li><strong>Export Turnover:</strong> Consideration for exports out of India received in convertible foreign exchange (within RBI prescribed time). Excludes Freight, Insurance, Telecom charges outside India.</li>
+        <li><strong>Total Turnover:</strong> Turnover of the SEZ unit (Domestic + Export). Excludes Freight, Insurance, Telecom charges, CCS, Drawback etc.</li>
+    </ul>
+
+     <h3>SEZ Re-investment Reserve (Years 11-15)</h3>
+    <ul>
+        <li>Amount transferred must be used to acquire <strong>new Plant & Machinery</strong> within <strong>3 years</strong>.</li>
+        <li>Non-utilization / Mis-utilization leads to deemed income.</li>
+    </ul>
+
+     <h3>Other Key Points</h3>
+     <ul>
+         <li>Requires Audit Report.</li>
+         <li>Business should be new (not formed by splitting/reconstruction - subject to IT exceptions for employee transfer).</li>
+         <li>Plant & Machinery should be mostly new (Used P&M limit 20%, or imported used P&M okay if no prior deduction claimed).</li>
+         <li>Deduction available to new owner for remaining period on transfer (amalgamation/demerger).</li>
+     </ul>
+
+</div>
+
+</body>
+</html>
